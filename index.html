@@ -25,12 +25,36 @@
   </div>
 </div>
   
-  <div class="w3-content w3-display-container">
-  <img class="mySlides" src="img_snowtops.jpg" style="width:100%">
-  <img class="mySlides" src="img_lights.jpg" style="width:100%">
-  <img class="mySlides" src="img_mountains.jpg" style="width:100%">
-  <img class="mySlides" src="img_forest.jpg" style="width:100%">
-  </div>
+<h2 class="w3-center">Manual Slideshow</h2>
+
+<div class="w3-content w3-display-container">
+  <img class="mySlides" src="https://wallpapercave.com/wp/wc1810295.jpg" style="width:100%">
+  <img class="mySlides" src="https://img00.deviantart.net/3d96/i/2017/217/5/3/paris_saint_germain_2017_2018_wallpaper_by_szwejzi-dbixp9a.png" style="width:100%">
+  <img class="mySlides" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNTEY6Nk861_KG9gfwCXJBVuaTroclbbLc6RSm6e4I_PL3JlZ-" style="width:100%">
+  <img class="mySlides" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQc0jf0_159YFQmFbAcLlDf9rfboVUMElIdbPewXCydTyFKaQ3DxQ" style="width:100%">
+
+  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+</div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
 
 <div class="w3-card-4 w3-margin" style="width:100%">
   <div class="w3-display-container w3-text-white">
