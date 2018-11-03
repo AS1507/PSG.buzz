@@ -18,20 +18,67 @@
   <p>Upcoming Games</p>
 </div>
 
-
-  
-  
-
-  
-  
-  
-  
-  
-  
 <body text="Blue">
 
   
+  
 
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+.mySlides {display:none;}
+</style>
+</head>
+
+<body>
+
+<h2 class="w3-center">Automatic Slideshow</h2>
+
+<div class="w3-content w3-section" style="max-width:500px">
+  <img class="mySlides" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTySI29FjtP1N_2zH_tAFWrOqID-0aCGTQkXJOb-IiSDlCK-HCU" style="width:100%">
+  <img class="mySlides" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5nvTfSxx6M_pvHNu8B36hLJMel1ggc2gA3ddhP5MHTH-3fNEI" style="width:100%">
+  <img class="mySlides" src="https://images.performgroup.com/di/library/GOAL/7b/63/kylian-mbappe-marseille-psg-ligue-1-28102018_lb7m5fnx1hdl1ix8qse37182h.jpg?t=-1137183610&quality=90&w=1280" style="width:100%">
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+
+  
+
+  
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
 <div class="w3-card-4 w3-margin" style="width:100%">
   <div class="w3-display-container w3-text-white">
     <img src="https://fcwallpaper.com/wp-content/uploads/2018/07/PSG-Wallpaper-HD.jpg" alt="Lights" style="width:100%">
