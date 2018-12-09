@@ -21,7 +21,7 @@ body {
 .topnav a {
     float: right;
     display: block;
-    color: #000000;
+    color: #000;
     text-align: center;
     padding: 20px 20px;
     text-decoration: none;
@@ -87,7 +87,11 @@ div.desc {
 /*roster page*/
 
 body {
-    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpHEF4OwEYZvI-SxmoOOP_0ZC-eCO0IbROS_nr82PLbd7FAuAKcA");
+   background:url("https://img.freepik.com/free-vector/abstract-dark-halftone-background-design_1017-15505.jpg?size=338&ext=jpg") no-repeat center center fixed;
+-webkit-bacground-size:cover;
+-moz-background-size:cover;
+-o-background-size:cover;
+background-size:cover;
 }
 
 
@@ -213,13 +217,23 @@ img {vertical-align: middle;}
 
 /* Table */ 
 
-table, th, td {
-    border: 5px solid black;
-    border-collapse: collapse;
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  color: #FFFFFF
 }
-th, td {
-    padding: 20px;
+
+td, th {
+  border: 3px solid #000;
+  text-align: center;
+  padding: 8px;
 }
+
+tr:nth-child(even) {
+  background-color: #D2691E;
+}
+
 
 
 
