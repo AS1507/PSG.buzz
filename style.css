@@ -211,6 +211,17 @@ img {vertical-align: middle;}
 .button4 {background-color: #e7e7e7; color: black;} /* Gray */ 
 
 
+/* Table */ 
+
+table, th, td {
+    border: 5px solid black;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 20px;
+}
+
+
 
 
 
